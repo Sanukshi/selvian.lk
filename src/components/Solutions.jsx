@@ -1,5 +1,6 @@
 import { ArrowRight, X } from "lucide-react";
 import { useEffect, useId, useState } from "react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 
 const CASES = [
@@ -216,13 +217,13 @@ export default function Solutions() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#contact"
+              <Link
+                to="/product"
                 onClick={() => setActive(null)}
                 className="btn-pop mt-8 inline-flex rounded-full bg-pink px-5 py-2.5 text-sm font-semibold text-ink"
               >
-                Request a Demo
-              </a>
+                Selvian v.1
+              </Link>
             </div>
           </div>
         </div>

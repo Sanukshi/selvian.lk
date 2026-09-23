@@ -1,5 +1,6 @@
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+﻿import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 
 const CAPABILITIES = [
@@ -447,13 +448,13 @@ export default function Platform() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#contact"
+              <Link
+                to="/product"
                 onClick={() => setOpen(false)}
                 className="btn-pop mt-8 inline-flex rounded-full bg-pink px-5 py-2.5 text-sm font-semibold text-ink"
               >
-                Request a Demo
-              </a>
+                Selvian v.1
+              </Link>
             </div>
           </div>
         </div>

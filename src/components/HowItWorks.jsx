@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 
 const STEPS = [
@@ -123,12 +124,12 @@ export default function HowItWorks() {
         </div>
 
         <Reveal className="mt-10 text-center">
-          <a
-            href="#contact"
+          <Link
+            to="/product"
             className="btn-pop inline-flex rounded-full bg-pink px-5 py-2.5 text-sm font-semibold text-ink"
           >
-            Request a Demo
-          </a>
+            Selvian v.1
+          </Link>
         </Reveal>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const LINKS = [
@@ -74,12 +75,12 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href="#contact"
+          <Link
+            to="/product"
             className="btn-pop hidden rounded-full bg-pink px-4 py-2 text-[13px] font-semibold text-ink sm:inline-flex"
           >
-            Request Demo
-          </a>
+            Selvian v.1
+          </Link>
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-ink transition hover:bg-pink-100 xl:hidden"
@@ -110,13 +111,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
+          <Link
+            to="/product"
             onClick={() => setOpen(false)}
             className="btn-pop mt-2 rounded-full bg-pink px-4 py-3 text-center text-sm font-semibold text-ink"
           >
-            Request Demo
-          </a>
+            Selvian v.1
+          </Link>
         </nav>
       </div>
     </header>

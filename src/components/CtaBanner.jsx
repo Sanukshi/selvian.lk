@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 
 export default function CtaBanner() {
@@ -29,13 +30,13 @@ export default function CtaBanner() {
             exception class you need to close first.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="#contact"
+            <Link
+              to="/product"
               className="btn-pop inline-flex items-center gap-2 rounded-full bg-pink px-6 py-3 text-sm font-semibold text-ink"
             >
-              Request a Demo
+              Selvian v.1
               <ArrowRight size={16} />
-            </a>
+            </Link>
             <a
               href="mailto:hello@selvian.lk"
               className="inline-flex rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-pink hover:text-pink"

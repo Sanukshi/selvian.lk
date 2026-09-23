@@ -1,5 +1,6 @@
 import { Linkedin, Mail, Youtube } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import LegalModal from "./LegalModal";
 import Logo from "./Logo";
 
@@ -7,18 +8,18 @@ const GROUPS = [
   {
     title: "Platform",
     links: [
-      { href: "#platform", label: "Capabilities" },
-      { href: "#how-it-works", label: "How it Works" },
-      { href: "#architecture", label: "Architecture" },
-      { href: "#solutions", label: "Solutions" },
+      { href: "/#platform", label: "Capabilities" },
+      { href: "/#how-it-works", label: "How it Works" },
+      { href: "/#architecture", label: "Architecture" },
+      { href: "/#solutions", label: "Solutions" },
     ],
   },
   {
     title: "Company",
     links: [
-      { href: "#pricing", label: "Pricing" },
-      { href: "#faq", label: "FAQ" },
-      { href: "#contact", label: "Contact Us" },
+      { href: "/#pricing", label: "Pricing" },
+      { href: "/#faq", label: "FAQ" },
+      { href: "/#contact", label: "Contact Us" },
     ],
   },
 ];
@@ -90,12 +91,12 @@ export default function Footer() {
             <p className="mt-4 text-sm text-white/55">
               Scope a demo with Sales. There is no public checkout.
             </p>
-            <a
-              href="#contact"
+            <Link
+              to="/product"
               className="btn-pop mt-4 inline-flex rounded-full bg-pink px-4 py-2 text-sm font-semibold text-ink"
             >
-              Request Demo
-            </a>
+              Selvian v.1
+            </Link>
           </div>
         </div>
 

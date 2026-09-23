@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Logo({ inverted = false, compact = false }) {
   return (
-    <a href="#home" className="flex items-center" aria-label="Selvian home">
+    <Link to="/" className="flex items-center" aria-label="Selvian home">
       <img
         src="/images/logo-mark.png"
         alt="Selvian"
@@ -12,6 +14,6 @@ export default function Logo({ inverted = false, compact = false }) {
             : "mix-blend-multiply"
         }`}
       />
-    </a>
+    </Link>
   );
 }
